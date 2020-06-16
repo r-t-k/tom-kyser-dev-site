@@ -1,0 +1,54 @@
+{
+  "desc": "I'm an experienced full-stack developer currently working on freelance and open source projects. I mostly do CMS plugin and theme development, but I enjoy a good bespoke app project to mix things up. I'm nerd for new tech and tools and I love to make things more efficient.",
+  "projects": [
+    {
+      "title": "TRWD Interactive Map",
+      "tech": "PHP - JAVASCRIPT - WORDPRESS",
+      "desc": "Some descrtiption text",
+      "link": "https://www.trwd.com",
+      "linkText" : "www.trwd.com"
+    },
+    {
+      "title": "TRWD Interactive Map",
+      "tech": "PHP - JAVASCRIPT - WORDPRESS",
+      "desc": "Some descrtiption text",
+      "link": "https://www.trwd.com",
+      "linkText" : "www.trwd.com"
+    },
+    {
+      "title": "TRWD Interactive Map",
+      "tech": "PHP - JAVASCRIPT - WORDPRESS",
+      "desc": "Some descrtiption text",
+      "link": "https://www.trwd.com",
+      "linkText" : "www.trwd.com"
+    },
+    {
+      "title": "TRWD Interactive Map",
+      "tech": "PHP - JAVASCRIPT - WORDPRESS",
+      "desc": "Some descrtiption text",
+      "link": "https://www.trwd.com",
+      "linkText" : "www.trwd.com"
+    },
+    {
+      "title": "TRWD Interactive Map",
+      "tech": "PHP - JAVASCRIPT - WORDPRESS",
+      "desc": "Some descrtiption text",
+      "link": "https://www.trwd.com",
+      "linkText" : "www.trwd.com"
+    },
+    {
+      "title": "TRWD Interactive Map",
+      "tech": "PHP - JAVASCRIPT - WORDPRESS",
+      "desc": "Some descrtiption text",
+      "link": "https://www.trwd.com",
+      "linkText" : "www.trwd.com"
+    },
+    {
+      "title": "TRWD Interactive Map",
+      "tech": "PHP - JAVASCRIPT - WORDPRESS",
+      "desc": "Some descrtiption text",
+      "link": "https://www.trwd.com",
+      "linkText" : "www.trwd.com"
+    }
+  ]
+}
