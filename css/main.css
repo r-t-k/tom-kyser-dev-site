@@ -4,7 +4,7 @@
 }
 
 body {
-
+	overflow-x: hidden;
 	--text-opacity: 1;
 	color: #949495;
 	color: rgba(148, 148, 149, var(--text-opacity));
@@ -24,6 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 a {
 	text-decoration: none;
 	color: unset;
+}
+.disabled-link {
+	pointer-events: none;
 }
 
 .font-bold {
@@ -288,6 +291,71 @@ a {
 .project-box:hover .project-link {
 	color: rgb(255, 255, 255);
 }
+#me {
+	margin-top: 44px;
+	margin-bottom: 44px;
+
+}
+#me-lead {
+	font-size: 32px;
+	font-weight: bold;
+	--text-opacity: 1;
+	color: #fff;
+	color: rgba(255, 255, 255, var(--text-opacity));
+}
+#me-career {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-between;
+}
+.career-block {
+	margin-bottom: 14px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 44px;
+	padding-bottom: 44px;
+	background: #202022;
+	flex-basis: calc(50% - 5px);
+	padding-left: 32px;
+	padding-right: 32px;
+}
+.block-up{
+	transform: translateY(-16.3px);
+}
+.career-title {
+	font-size: 28px;
+	--text-opacity: 1;
+	color: #fff;
+	color: rgba(255, 255, 255, var(--text-opacity));
+	font-weight: 600;
+	display: block;
+}
+
+/* Element | http://localhost:63342/tom-kyser-dev/index.html?_ijt=8makoskc0ridt6vasqu5h3gghi */
+
+.career-dates {
+	font-size: 10px;
+	padding-top: 10px;
+	font-weight: 600;
+}
+
+/* Element | http://localhost:63342/tom-kyser-dev/index.html?_ijt=8makoskc0ridt6vasqu5h3gghi */
+
+.career-role {
+	padding-top: 10px;
+	color: rgba(255, 255, 255, var(--text-opacity));
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+/* Element | http://localhost:63342/tom-kyser-dev/index.html?_ijt=8makoskc0ridt6vasqu5h3gghi */
+
+.career-desc {
+	padding-top: 14px;
+}
 
 @media screen and (max-width: 1280px) {
 	body {
@@ -327,5 +395,13 @@ a {
 	}
 	#nav {
 		display: none;
+	}
+
+	.career-title {
+		font-size: 16px;
+	}
+	.career-role {
+		letter-spacing: 1.5px;
+		font-weight: 500;
 	}
 }
