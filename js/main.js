@@ -1,6 +1,6 @@
-function insertText(target, content, html=false) {
+function insertText(target, content, html = false) {
 	target.textContent = content;
-	if(html){
+	if (html) {
 		target.innerHTML = content;
 	}
 }
@@ -57,7 +57,7 @@ fetch('data/data.json')
 			//
 			let projLinkA = document.createElement('a');
 			projLinkA.classList.add('project-a');
-			projLinkA.setAttribute('href',data.projects[i].link);
+			projLinkA.setAttribute('href', data.projects[i].link);
 			//
 			let projLink = document.createElement('span');
 			projLink.classList.add('project-link');
@@ -99,5 +99,30 @@ fetch('data/data.json')
 
 		}
 	});
+
+window.onscroll = function () {
+	const projTop = document.getElementById('projects');
+	const meTop = document.getElementById('me');
+	const projText = document.getElementById('projTop');
+	const headerBox = document.getElementById('section-header-box');
+	const projTopVal =	projTop.offsetTop;
+	const meTopVal =	meTop.offsetTop;
+	if (window.scrollY >= projTopVal - 88) {
+		headerBox.classList.add('show');
+		headerBox.classList.remove('hide');
+	} else {
+		headerBox.classList.add('hide');
+		headerBox.classList.remove('show');
+	}
+	//
+	if (window.scrollY >= meTopVal - 144) {
+		projText.classList.add('display-none');
+		projText.classList.remove('display-init');
+	} else {
+		projText.classList.add('display-init');
+		projText.classList.remove('display-none');
+	}
+};
+
 
 

@@ -25,6 +25,11 @@ a {
 	text-decoration: none;
 	color: unset;
 }
+
+.sm-only, div > .sm-only {
+	display: none !important;
+}
+
 .disabled-link {
 	pointer-events: none;
 }
@@ -34,7 +39,7 @@ a {
 }
 
 .large-text {
-	font-size: 72px;
+	font-size: 5.14em;
 }
 
 .body-spacer {
@@ -51,6 +56,59 @@ a {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#section-header-box {
+	/*transition: top 0.5s;*/
+	width: 100vw;
+	background-color: #202022;
+	top: 0;
+	position: fixed;
+	z-index: 50;
+	height: 0px;
+	/*opacity: 0;*/
+	/*padding-top:44px;*/
+}
+
+
+
+.section-header {
+	letter-spacing: 3px;
+	z-index: 60;
+	--text-opacity: 1;
+	color: #fff;
+	color: rgba(255, 255, 255, var(--text-opacity));
+	font-weight: 700;
+	line-height: 1.5;
+	position: sticky;
+	top: 0;
+	padding-top: 24px;
+	font-size: 0.857em;
+	margin-bottom: 32px;
+	margin-top: -32px;
+}
+
+#section-header-box-shadow {
+	background: linear-gradient(0deg, rgba(21, 21, 21, 0), #151515);
+	width: 100%;
+	height: 50%;
+	top: 64px;
+	position: relative;
+}
+#projTop, #meTop {
+	display: none;
+}
+.hide {
+	/*opacity: 0 !important;*/
+	height: 0px !important;
+	transition: height 200ms;
+	/*display: none;*/
+}
+
+.show {
+	/*opacity: 1 !important;*/
+	height: 64px !important;
+	transition: height 200ms;
 }
 
 .flex-col {
@@ -123,13 +181,13 @@ a {
 }
 
 .wide {
-	font-size: 10px;
+	font-size: 0.715em;
 	letter-spacing: 1px;
 	font-weight: 700;
 }
 
 .widest {
-	font-size: 10px;
+	font-size: 0.715em;
 	letter-spacing: 3px;
 	font-weight: 700;
 }
@@ -247,14 +305,14 @@ a {
 	--text-opacity: 1;
 	color: #fff;
 	color: rgba(255, 255, 255, var(--text-opacity));
-	font-size: 10px;
+	font-size: 0.715em;
 	font-weight: 700;
 	letter-spacing: 3px;
 }
 
 .project-title {
 	line-height: 1.25;
-	font-size: 24px;
+	font-size: 1.715em;
 	font-weight: 600;
 	--text-opacity: 1;
 	color: #fff;
@@ -279,7 +337,7 @@ a {
 .project-link {
 	display: flex;
 	margin-top: 8px;
-	font-size: 10px;
+	font-size: 0.715em;
 	align-items: center;
 	font-weight: 600;
 }
@@ -291,18 +349,21 @@ a {
 .project-box:hover .project-link {
 	color: rgb(255, 255, 255);
 }
+
 #me {
 	margin-top: 44px;
 	margin-bottom: 44px;
 
 }
+
 #me-lead {
-	font-size: 32px;
+	font-size: 2.285em;
 	font-weight: bold;
 	--text-opacity: 1;
 	color: #fff;
 	color: rgba(255, 255, 255, var(--text-opacity));
 }
+
 #me-career {
 	display: flex;
 	flex-direction: row;
@@ -310,6 +371,7 @@ a {
 	align-content: space-between;
 	justify-content: space-between;
 }
+
 .career-block {
 	margin-bottom: 14px;
 	display: flex;
@@ -321,11 +383,13 @@ a {
 	padding-left: 32px;
 	padding-right: 32px;
 }
-.block-up{
-	transform: translateY(-16.3px);
+
+.block-up {
+	transform: translateY(-26.3px);
 }
+
 .career-title {
-	font-size: 28px;
+	font-size: 2em;
 	--text-opacity: 1;
 	color: #fff;
 	color: rgba(255, 255, 255, var(--text-opacity));
@@ -336,7 +400,7 @@ a {
 /* Element | http://localhost:63342/tom-kyser-dev/index.html?_ijt=8makoskc0ridt6vasqu5h3gghi */
 
 .career-dates {
-	font-size: 10px;
+	font-size: 0.715em;
 	padding-top: 10px;
 	font-weight: 600;
 }
@@ -346,7 +410,7 @@ a {
 .career-role {
 	padding-top: 10px;
 	color: rgba(255, 255, 255, var(--text-opacity));
-	font-size: 10px;
+	font-size: 0.715em;
 	font-weight: 700;
 	letter-spacing: 3px;
 }
@@ -361,6 +425,7 @@ a {
 	body {
 		margin: 0;
 	}
+
 	#main {
 		flex-wrap: wrap;
 		max-width: 100vw;
@@ -393,15 +458,89 @@ a {
 		position: static;
 		width: 100%;
 	}
+
 	#nav {
 		display: none;
 	}
 
 	.career-title {
-		font-size: 16px;
+		font-size: 1.14em;
 	}
+
 	.career-role {
 		letter-spacing: 1.5px;
 		font-weight: 500;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		margin: 0;
+		/*font-size: 12px;*/
+	}
+
+	body * {
+		/*font-size: 12px;*/
+		line-height: 1;
+	}
+
+	.sm-only, div > .sm-only {
+		display: initial !important;
+	}
+	#projTop, #meTop {
+		display: initial;
+	}
+	#main {
+		flex-wrap: wrap;
+		padding-top: 22px;
+	}
+
+	.large-text {
+		font-size: 3.42857em;
+	}
+
+	#intro {
+		width: 100%;
+	}
+
+	#pic {
+		margin-right: 0;
+		width: 48px;
+	}
+
+	#pic img {
+		width: 48px;
+	}
+
+	#social-btns {
+		justify-content: space-evenly;
+		padding-right: 32px;
+	}
+
+	.social-link svg {
+		margin-right: 8px;
+	}
+
+	.career-block {
+		flex-basis: 100%;
+	}
+
+	.block-up {
+		transform: unset;
+	}
+
+	#projects {
+		margin-bottom: 44px;
+	}
+
+	#me {
+		margin-top: 0px;
+	}
+	.display-init {
+		display: initial !important;
+	}
+
+	.display-none {
+		display: none !important;
 	}
 }
