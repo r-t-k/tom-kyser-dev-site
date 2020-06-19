@@ -58,6 +58,7 @@ fetch('data/data.json')
 			let projLinkA = document.createElement('a');
 			projLinkA.classList.add('project-a');
 			projLinkA.setAttribute('href', data.projects[i].link);
+			projLinkA.setAttribute('target', '_blank');
 			//
 			let projLink = document.createElement('span');
 			projLink.classList.add('project-link');
@@ -76,16 +77,19 @@ fetch('data/data.json')
 
 			insertText(projTech, data.projects[i].tech);
 			insertText(projTitle, data.projects[i].title);
-			insertText(projDesc, data.projects[i].desc);
+			insertText(projDesc, data.projects[i].desc, true);
 			insertText(projLink, linkSvg, true);
 			insertText(projLinkText, data.projects[i].linkText);
 			//
 			projFlexTech.appendChild(projTech);
 			projFlexTitle.appendChild(projTitle);
 			projFlexDesc.appendChild(projDesc);
-			projLink.appendChild(projLinkText);
-			projLinkA.appendChild(projLink);
-			projFlexLink.appendChild(projLinkA);
+
+			if(data.projects[i].link) {
+				projLink.appendChild(projLinkText);
+				projLinkA.appendChild(projLink);
+				projFlexLink.appendChild(projLinkA);
+			}
 			//
 			projBox.appendChild(projFlexTech);
 			projBox.appendChild(projFlexTitle);

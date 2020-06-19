@@ -2,53 +2,37 @@
   "desc": "I'm an experienced full-stack developer currently working on freelance and open source projects. I mostly do CMS plugin and theme development, but I enjoy a good bespoke app project to mix things up. I'm a nerd for new tech and tools and I love to make things more efficient.",
   "projects": [
     {
-      "title": "TRWD Interactive Map",
-      "tech": "PHP - JAVASCRIPT - WORDPRESS",
-      "desc": "Some descrtiption text",
+      "title": "Interactive Map",
+      "tech": "PHP - JAVASCRIPT - CSS - WORDPRESS",
+      "desc": "I created an interactive map with animations imported from After Effects for Tarrant County Regional Water District. I built a library and plugin for WordPress to make a flexible and fast way to swap out or tweak the animations. The UI is written in JS and CSS while the backend runs inside of WordPress.",
       "link": "https://www.trwd.com",
       "linkText" : "www.trwd.com"
     },
     {
-      "title": "TRWD Interactive Map",
-      "tech": "PHP - JAVASCRIPT - WORDPRESS",
-      "desc": "Some descrtiption text",
-      "link": "https://www.trwd.com",
-      "linkText" : "www.trwd.com"
+      "title": "Automated Content Translation and Data Processing",
+      "tech": "PHP - JAVASCRIPT - CSS - WORDPRESS - GOOGLE TRANSLATE API",
+      "desc": "I helped the folks at Service First Mortgage speed up their report and correspondence needs by creating several intuitive Custom Post Types that not only help their Loan Officers build forms and reports but also automatically create Spanish versions of them. I also extended the automated translation to include other tools they offer on their website, such as the loan officer directory and all other customer intake forms.",
+      "link": "https://sfmc.com/",
+      "linkText" : "sfmc.com"
     },
     {
-      "title": "TRWD Interactive Map",
-      "tech": "PHP - JAVASCRIPT - WORDPRESS",
-      "desc": "Some descrtiption text",
-      "link": "https://www.trwd.com",
-      "linkText" : "www.trwd.com"
+      "title": "Alcon Science Videos",
+      "tech": "PHP - JAVASCRIPT - CSS - WORDPRESS",
+      "desc": "The team at Alcon wanted an easy and universal way to manage their published video content across their platforms including on their website. To help them achieve this goal, I used the API provided by their video publishing platform and integrated it with their WordPress site. With that integration in place I was able to create an elegant video listing page for their audience to browse and consume.",
+      "link": "https://us.alconscience.com/videos/",
+      "linkText" : "us.alconscience.com/videos"
     },
     {
-      "title": "TRWD Interactive Map",
-      "tech": "PHP - JAVASCRIPT - WORDPRESS",
-      "desc": "Some descrtiption text",
-      "link": "https://www.trwd.com",
-      "linkText" : "www.trwd.com"
+      "title": "Static File Server",
+      "tech": "PYTHON - SVELTE - FASTAPI - NGINX - DOCKER",
+      "desc": "Fort Worth Magazine's website is powered by a hosted CMS called Metro Publisher, and it's customization is limited. The FWMag team needed a way to create, edit, and serve static files more efficiently than going through many different admin pages and very limiting custom content fields, so I created platform for them.<br /><br /> Javascript, HTML, images, videos, and CSS, can be uploaded to this platform over SFTP or a front end ui. The front end displays a table that lists the uploaded files by the page or category they will be served on the FWMag site, each link when clicked gives the option to copy a direct url or an HTML tag version.<br /><br /> The team can now easily work with HTML, CSS, and Javascript using git for version control and SFTP to deploy so long as they include the link on the page or template they create in Metro Publisher.",
+      "link": "https://www.fwtx.com",
+      "linkText" : "www.fwtx.com"
     },
     {
-      "title": "TRWD Interactive Map",
-      "tech": "PHP - JAVASCRIPT - WORDPRESS",
-      "desc": "Some descrtiption text",
-      "link": "https://www.trwd.com",
-      "linkText" : "www.trwd.com"
-    },
-    {
-      "title": "TRWD Interactive Map",
-      "tech": "PHP - JAVASCRIPT - WORDPRESS",
-      "desc": "Some descrtiption text",
-      "link": "https://www.trwd.com",
-      "linkText" : "www.trwd.com"
-    },
-    {
-      "title": "TRWD Interactive Map",
-      "tech": "PHP - JAVASCRIPT - WORDPRESS",
-      "desc": "Some descrtiption text",
-      "link": "https://www.trwd.com",
-      "linkText" : "www.trwd.com"
+      "title": "Company Intranet Website",
+      "tech": "PHP - VUEJS - JAVASCRIPT - CSS - WORDPRESS",
+      "desc": "While the site itself is only viewable from inside the Company's private network and closed source, I'd be remiss not to cover it. The scope of the project was massive and one of my biggest challenges.<br /><br /> The client wanted their own LinkedIn type social network with added in project management, forums, news, company wide calendars and contact directory, JIRA integration, and even a fully bespoke animated weather widget. To pose another challenge they required this all to be done with WordPress and Visual Composer based theme with a selection of must have plugins.<br /><br /> I tied everything together in the backend with an event driven interface that links everything properly in the DB and made wrappers around all of the different plugin and service APIs to make it easy for everything to work together. I created a notification and activity system that largely extended what the BuddyPress plugin provided, to the rest of the features of the site. I adapted SQL queries they provided to a JIRA ticket display table I built with Vue.js. I created a unified permission and profile system that ties in all of the employee profiles, content, and events related to them. I wrote a completely custom weather widget with css animations for all weather conditions. Finally all content and design they wanted to be editable, I integrated with Visual Composer."
     }
   ]
 }

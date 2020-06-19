@@ -281,7 +281,13 @@ a {
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
-
+html body div#main div#col-right.flex-col.col-ml div#projects div.project div.project-box div.project-flex span.project-desc {
+	line-height: 1.2;
+	display: inline-block;
+}
+html body div#main div#col-right.flex-col.col-ml div#me div#me-box div#me-career div.career-block.block-up span.career-desc {
+	line-height: 1.2;
+}
 .project-box {
 	background: #202022;
 	width: 100%;
